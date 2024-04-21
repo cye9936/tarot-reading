@@ -124,6 +124,16 @@
   align-items: center;
   justify-content: center;
 }
+.cards.three-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards.five-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
 
 .card-image-container {
   display: flex;
