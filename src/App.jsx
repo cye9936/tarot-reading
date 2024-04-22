@@ -51,7 +51,7 @@ function App() {
     // Set the spread and titles after the delay
     setNumCards(nextNumCards);
     setCards(drawnCards);
-    setTitles(nextNumCards === 3 ? ['Past', 'Present', 'Future'] : ['Current State', 'Result of Choice A', 'Result of Choice B', 'Future of Choice A', 'Future of Choice B']);
+    setTitles(nextNumCards === 3 ? ['Past', 'Present', 'Future'] : ['Current State', 'Future of Choice A', 'Future of Choice B', 'Result of Choice A', 'Result of Choice B']);
   };
   return (
     <Grid container spacing={2} justifyContent="center">
