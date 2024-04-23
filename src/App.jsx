@@ -1,4 +1,5 @@
 import './App.css';
+import tarotData from './data/tarot-data.json';
 import React, { useState, useEffect } from 'react';
 import TarotCard from './components/TarotCard';
 import Button from '@mui/material/Button';
@@ -22,9 +23,7 @@ function App() {
 
   // Function to draw cards
   const drawCards = async (numCards) => {
-    const response = await fetch('/data/tarot-images.json');
-    const data = await response.json();
-    const shuffled = data.cards.sort(() => 0.5 - Math.random());
+    const shuffled = tarotData.cards.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, numCards);
   };
 

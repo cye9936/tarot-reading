@@ -6,7 +6,7 @@ function TarotCard({ card, title }) {
     <div className="card">
       <CardTitle title={title} />
       <div className="card-image-container">
-        <img src={`/data/cards/${card.img}`} alt={card.name} />
+        <img src={`./data/cards/${card.img}`} alt={card.name} />
       </div>
       <div className="card-content">
         <h2 className="card-name">{card.name}</h2>
